@@ -27,7 +27,7 @@ public class Exercise2 {
             }
         }
 
-        if (coincide == true) {
+        if (coincide) {
             System.out.println("Al menos un caracter coincide con la cadena especial");
         } else {
             System.out.println("Ningun caracter coincide con la cadena especial");

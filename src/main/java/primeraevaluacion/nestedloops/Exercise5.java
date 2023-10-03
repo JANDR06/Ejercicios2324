@@ -14,7 +14,7 @@ public class Exercise5 {
 
                     if (j == 4 && i!= 3) {
                         System.out.print(i);
-                    } else if (j==4 && i==3) {
+                    } else if (j == 4) {
                         System.out.print("E");
                     } else {
 
