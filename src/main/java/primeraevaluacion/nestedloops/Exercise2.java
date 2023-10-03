@@ -12,7 +12,7 @@ public class Exercise2 {
 
         Scanner sc = new Scanner(System.in);
 
-        String cadena = "|@#~€¬!»·$%&/()=", cadenaUsuario;
+        String cadena = "\\\\|@#~€¬!»·$%&/()=", cadenaUsuario;
         boolean coincide = false;
 
         System.out.print("Escribe una cadena: ");

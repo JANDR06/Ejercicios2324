@@ -30,5 +30,20 @@ public class Exercise7 {
             System.out.println();
             aux--;
         }
+
+        System.out.print("¿Altura de la escalera clasica? ");
+        int alturaClas = sc.nextInt();
+        int auxClas = 1;
+
+        for (int i = 1; i <= alturaClas; i++) {
+            for (int j = 1; j <= auxClas; j++) {
+
+                System.out.print("* ");
+            }
+
+            System.out.println();
+            auxClas++;
+
+        }
     }
 }
