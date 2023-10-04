@@ -17,19 +17,19 @@ public class Exercise10 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("¿Caracter para rellenar la escalera clasica? ");
+        System.out.print("Escribe el numero de filas de tu escalera: ");
+        int filas = sc.nextInt();
+
+        System.out.print("Escribe el caracter para formar la escalera: ");
         char caracter = sc.next().charAt(0);
-        int auxClas = 1;
 
-        for (int i = 1; i <= 5; i++) {
-            for (int j = 1; j <= auxClas; j++) {
+        for (int i = 1; i <=  filas; i++) {
+            for (int j = 1; j <= i + (i - 1); j++) {
 
-                System.out.print(caracter + " ");
+                System.out.print(caracter);
             }
 
             System.out.println();
-            auxClas++;
-
         }
     }
 }
