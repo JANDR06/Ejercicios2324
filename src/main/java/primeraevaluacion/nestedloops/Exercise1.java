@@ -4,11 +4,12 @@ public class Exercise1{
 
     public static void main(String[] args){
 
-        for (int i = 2; i <= 100; i++){
+
+        for (int i = 2; i <= 100; i++) {
             boolean primo = true;
             int j = i - 1;
 
-            while (j >= 2 && primo){
+            while (j >= 2 && primo) {
                 if (i % j == 0){
                     primo = false;
                 }
@@ -22,5 +23,11 @@ public class Exercise1{
         }
         System.out.println();
 
+
+
+
+
     }
+
+
 }
