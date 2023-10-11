@@ -10,10 +10,7 @@ import java.util.Scanner;
 public class Exercise12 {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("¿Altura del triangulo? ");
-        int altura = sc.nextInt();
+        int altura = elgirTamanyo();
         System.out.println();
 
         System.out.println("------ TRIANGULO 1 ------");
@@ -32,8 +29,7 @@ public class Exercise12 {
         triangulo4(altura);
         System.out.println();
 
-        System.out.print("¿Con que triangulo te quedas? ");
-        int numero = sc.nextInt();
+        int numero = elgirNumero();
 
         if (numero == 1) {
             triangulo1(altura);
@@ -89,4 +85,38 @@ public class Exercise12 {
             System.out.println();
         }
     }
+
+    public static int elgirNumero() {
+        Scanner sc = scanner();
+
+        int num;
+
+        do {
+            System.out.print("¿Con que triangulo te quedas (1 - 4)? ");
+            num = sc.nextInt();
+
+        } while (num < 1 || num > 4);
+
+        return num;
+    }
+
+    public static int elgirTamanyo() {
+        Scanner sc = scanner();
+
+        int tamanyo;
+
+        do {
+            System.out.print("¿Altura del triangulo (1 - 99)? ");
+            tamanyo = sc.nextInt();
+
+        } while (tamanyo < 1 || tamanyo > 99);
+
+        return tamanyo;
+    }
+
+    public static Scanner scanner() {
+        Scanner sc = new Scanner(System.in);
+        return sc;
+    }
+
 }
